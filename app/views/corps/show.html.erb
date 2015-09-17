@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Corp no:</strong>
+  <%= @corp.corp_no %>
+</p>
+
+<p>
+  <strong>Corp name:</strong>
+  <%= @corp.corp_name %>
+</p>
+
+<p>
+  <strong>Posi no:</strong>
+  <%= @corp.posi_no %>
+</p>
+
+<p>
+  <strong>Corp rep:</strong>
+  <%= @corp.corp_rep %>
+</p>
+
+<p>
+  <strong>Corp add:</strong>
+  <%= @corp.corp_add %>
+</p>
+
+<p>
+  <strong>Corp tel:</strong>
+  <%= @corp.corp_tel %>
+</p>
+
+<p>
+  <strong>Corp fax:</strong>
+  <%= @corp.corp_fax %>
+</p>
+
+<p>
+  <strong>Corp mail:</strong>
+  <%= @corp.corp_mail %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @corp.note %>
+</p>
+
+<%= link_to 'Edit', edit_corp_path(@corp) %> |
+<%= link_to 'Back', corps_path %>

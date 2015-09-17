@@ -1,0 +1,53 @@
+<%= form_for(@corp) do |f| %>
+  <% if @corp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@corp.errors.count, "error") %> prohibited this corp from being saved:</h2>
+
+      <ul>
+      <% @corp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :corp_no %><br>
+    <%= f.text_field :corp_no %>
+  </div>
+  <div class="field">
+    <%= f.label :corp_name %><br>
+    <%= f.text_field :corp_name %>
+  </div>
+  <div class="field">
+    <%= f.label :posi_no %><br>
+    <%= f.text_field :posi_no %>
+  </div>
+  <div class="field">
+    <%= f.label :corp_rep %><br>
+    <%= f.text_field :corp_rep %>
+  </div>
+  <div class="field">
+    <%= f.label :corp_add %><br>
+    <%= f.text_field :corp_add %>
+  </div>
+  <div class="field">
+    <%= f.label :corp_tel %><br>
+    <%= f.text_field :corp_tel %>
+  </div>
+  <div class="field">
+    <%= f.label :corp_fax %><br>
+    <%= f.text_field :corp_fax %>
+  </div>
+  <div class="field">
+    <%= f.label :corp_mail %><br>
+    <%= f.text_field :corp_mail %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
