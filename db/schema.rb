@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150917144859) do
+ActiveRecord::Schema.define(version: 20150921163635) do
 
   create_table "corps", id: false, force: :cascade do |t|
     t.string   "corp_no",    limit: 8, null: false
     t.string   "corp_name"
-    t.string   "posi_no"
+    t.string   "corp_pos"
     t.string   "corp_rep"
     t.string   "corp_add"
     t.string   "corp_tel"
