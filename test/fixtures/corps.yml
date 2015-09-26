@@ -1,23 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  corp_no: 
-  corp_name: MyString
-  posi_no: MyString
-  corp_rep: MyString
-  corp_add: MyString
-  corp_tel: MyString
-  corp_fax: MyString
-  corp_mail: MyString
-  note: MyText
+  corp_no: 101
+  corp_name: マックイントッシュ株式会社
+  corp_pos: 代表取締役
+  corp_rep: ステイボ・ジョシス
+  corp_add: 東京都渋谷区
+  corp_tel: 03-1234-1234
+  corp_fax: 03-1234-1111
+  corp_mail: info@macintosh.jp
+  note: あああ
 
 two:
-  corp_no: 
-  corp_name: MyString
-  posi_no: MyString
-  corp_rep: MyString
-  corp_add: MyString
-  corp_tel: MyString
-  corp_fax: MyString
-  corp_mail: MyString
-  note: MyText
+  corp_no: 102
+  corp_name: マイクロソフト有限会社
+  corp_pos: 代表取締役工場長
+  corp_rep: ビロ・ゲイト
+  corp_add: 東京都練馬区
+  corp_tel: 03−3333−4444
+  corp_fax: 03-4444-3333
+  corp_mail: biro@maikuro.jp
+  note: いいい
