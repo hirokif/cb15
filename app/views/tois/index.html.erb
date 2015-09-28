@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tois</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Toi no</th>
+      <th>Toi name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tois.each do |toi| %>
+      <tr>
+        <td><%= toi.toi_no %></td>
+        <td><%= toi.toi_name %></td>
+        <td><%= link_to 'Show', toi %></td>
+        <td><%= link_to 'Edit', edit_toi_path(toi) %></td>
+        <td><%= link_to 'Destroy', toi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Toi', new_toi_path %>

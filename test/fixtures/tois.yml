@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  toi_no: 1
+  toi_name: MyString
+
+two:
+  toi_no: 1
+  toi_name: MyString
