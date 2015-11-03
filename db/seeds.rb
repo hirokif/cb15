@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Toi.create(:toi_no => 100, :toi_name => "建設")
+Toi.create(:toi_no => 200, :toi_name => "コンサル")
+Toi.create(:toi_no => 300, :toi_name => "物品役務等")
+
