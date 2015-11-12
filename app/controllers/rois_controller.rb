@@ -69,6 +69,6 @@ class RoisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def roi_params
-      params.require(:roi).permit(:toi_no, :toi_name)
+      params.require(:roi).permit(:roi_no, :roi_name)
     end
 end

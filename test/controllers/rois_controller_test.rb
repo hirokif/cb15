@@ -18,7 +18,7 @@ class RoisControllerTest < ActionController::TestCase
 
   test "should create roi" do
     assert_difference('Roi.count') do
-      post :create, roi: { toi_name: @roi.toi_name, toi_no: @roi.toi_no }
+      post :create, roi: { roi_name: @roi.roi_name, roi_no: @roi.roi_no }
     end
 
     assert_redirected_to roi_path(assigns(:roi))
@@ -35,7 +35,7 @@ class RoisControllerTest < ActionController::TestCase
   end
 
   test "should update roi" do
-    patch :update, id: @roi, roi: { toi_name: @roi.toi_name, toi_no: @roi.toi_no }
+    patch :update, id: @roi, roi: { roi_name: @roi.roi_name, roi_no: @roi.roi_no }
     assert_redirected_to roi_path(assigns(:roi))
   end
 

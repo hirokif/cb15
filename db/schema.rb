@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151104102222) do
+ActiveRecord::Schema.define(version: 20151112142050) do
 
   create_table "corps", id: false, force: :cascade do |t|
     t.string   "corp_no",    limit: 8, null: false
@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(version: 20151104102222) do
   add_index "corps", ["corp_no"], name: "index_corps_on_corp_no", unique: true
 
   create_table "rois", id: false, force: :cascade do |t|
-    t.integer  "toi_no"
-    t.string   "toi_name"
+    t.integer  "roi_no"
+    t.string   "roi_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

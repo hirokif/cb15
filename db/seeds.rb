@@ -6,7 +6,28 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Toi.create(:toi_no => 100, :toi_name => "建設")
-Toi.create(:toi_no => 200, :toi_name => "コンサル")
-Toi.create(:toi_no => 300, :toi_name => "物品役務等")
+
+
+# 最新状態へ
+# rake db:migrate
+#
+# リセット（データベースの中身が空っぽ）
+# rake db:migrate:reset
+#
+# seedデータの読み込み
+# rake db:seeed
+#
+# リセット＋シードデータの読み込み
+# rake db:reset
+
+require "csv"
+
+CSV.foreach('db/tois.csv') do |row|
+  Toi.create(:toi_no => row[0], :toi_name => row[1])
+end
+
+CSV.foreach('db/rois.csv') do |row|
+  Roi.create(:roi_no => row[0], :roi_name => row[1])
+end
+
 

@@ -1,1 +1,1 @@
-json.extract! @roi, :id, :toi_no, :toi_name, :created_at, :updated_at
+json.extract! @roi, :id, :roi_no, :roi_name, :created_at, :updated_at

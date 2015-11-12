@@ -5,8 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>Toi no</th>
-      <th>Toi name</th>
+      <th>Roi no</th>
+      <th>Roi name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,8 +14,8 @@
   <tbody>
     <% @rois.each do |roi| %>
       <tr>
-        <td><%= roi.toi_no %></td>
-        <td><%= roi.toi_name %></td>
+        <td><%= roi.roi_no %></td>
+        <td><%= roi.roi_name %></td>
         <td><%= link_to 'Show', roi %></td>
         <td><%= link_to 'Edit', edit_roi_path(roi) %></td>
         <td><%= link_to 'Destroy', roi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
