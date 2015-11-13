@@ -27,7 +27,7 @@ CSV.foreach('db/tois.csv') do |row|
 end
 
 CSV.foreach('db/rois.csv') do |row|
-  Roi.create(:roi_no => row[0], :roi_name => row[1])
+  Roi.create(:roi_no => row[0], :roi_name => row[1], :toi_no => row[2])
 end
 
 
