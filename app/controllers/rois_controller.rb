@@ -32,7 +32,7 @@ class RoisController < ApplicationController
         format.json { render :show, status: :created, location: @roi }
       else
         format.html { render :new }
-        format.json { render json: @roi.errors, status: :unprocessable_entity }
+				format.json { render json: @roi.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -44,7 +44,7 @@ class RoisController < ApplicationController
       if @roi.update(roi_params)
         format.html { redirect_to @roi, notice: 'Roi was successfully updated.' }
         format.json { render :show, status: :ok, location: @roi }
-      else
+			else
         format.html { render :edit }
         format.json { render json: @roi.errors, status: :unprocessable_entity }
       end
@@ -65,10 +65,10 @@ class RoisController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_roi
       @roi = Roi.find(params[:id])
-    end
+		end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def roi_params
-      params.require(:roi).permit(:roi_no, :roi_name)
+      params.require(:roi).permit(:roi_no, :roi_name, :toi_no)
     end
 end

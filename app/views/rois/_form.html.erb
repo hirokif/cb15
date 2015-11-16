@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+  <%= f.collection_select :toi_no, Toi.all, :toi_no, :toi_name %>
   <div class="field">
     <%= f.label :roi_no %><br>
     <%= f.number_field :roi_no %>
