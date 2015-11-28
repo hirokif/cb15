@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  corp_no: 101
+  roi_no: 101
+  mr: 23
+  pp: 53
+  note: "たたた"
+
+two:
+  corp_no: 101
+  roi_no: 201
+  mr: 102
+  pp: 112
+  note: "ととと"

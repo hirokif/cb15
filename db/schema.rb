@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151113085623) do
+ActiveRecord::Schema.define(version: 20151127170749) do
+
+  create_table "cds", force: :cascade do |t|
+    t.integer  "corp_no"
+    t.integer  "roi_no"
+    t.integer  "mr"
+    t.integer  "pp"
+    t.text     "note"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "corps", id: false, force: :cascade do |t|
     t.string   "corp_no",    limit: 8, null: false
