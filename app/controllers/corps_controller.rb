@@ -15,6 +15,7 @@ class CorpsController < ApplicationController
   # GET /corps/new
   def new
     @corp = Corp.new
+		@corp.cds.build
   end
 
   # GET /corps/1/edit
@@ -69,6 +70,17 @@ class CorpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def corp_params
-      params.require(:corp).permit(:corp_no, :corp_name, :posi_no, :corp_rep, :corp_add, :corp_tel, :corp_fax, :corp_mail, :note)
+      params.require(:corp).permit(
+				:corp_no,
+			 	:corp_name,
+			 	:posi_no,
+			 	:corp_rep,
+			 	:corp_add,
+			 	:corp_tel,
+			 	:corp_fax,
+			 	:corp_mail,
+			 	:note,
+				cds_attributes: [:id, :corp_no, :roi_no, :mr, :pp, :note]
+			)
     end
 end

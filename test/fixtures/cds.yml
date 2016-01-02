@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   corp_no: 101
   roi_no: 101
   mr: 23
@@ -8,8 +9,17 @@ one:
   note: "たたた"
 
 two:
+  id: 2
   corp_no: 101
   roi_no: 201
   mr: 102
   pp: 112
   note: "ととと"
+
+three:
+  id: 3
+  corp_no: 101
+  roi_no: 102
+  mr: 89
+  pp: 276
+  note: "ののの"

@@ -47,6 +47,19 @@
     <%= f.label :note %><br>
     <%= f.text_area :note %>
   </div>
+	<div class="field">
+		<%= f.label :cds, "詳細" %><br />
+		<%= f.fields_for :cds do |cds_form| %>
+			<%= cds_form.label :roi_no, "登録業種" %>
+			<%= cds_form.text_field :roi_no  %><br>
+			<%= cds_form.label :mr, "平均実績高（千円）" %>
+			<%= cds_form.text_field :mr  %><br>
+			<%= cds_form.label :pp, "P点（総合評定値）" %>
+			<%= cds_form.text_field :pp  %><br>
+			<%= cds_form.label :note, "備考" %>
+			<%= cds_form.text_area :note  %><br>
+		<% end %>
+	</div>
   <div class="actions">
     <%= f.submit %>
   </div>
